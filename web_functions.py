@@ -3,7 +3,7 @@
 # Import necessary modules
 import numpy as np
 import pandas as pd
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 import streamlit as st
 
 
@@ -24,7 +24,7 @@ def load_data():
 def train_model(X, y):
     """This function trains the model and return the model and model score"""
     # Create the model
-    model = DecisionTreeClassifier(
+    model = andomForestClassifier(
             ccp_alpha=0.0, class_weight=None, criterion='entropy',
             max_depth=4, max_features=None, max_leaf_nodes=None,
             min_impurity_decrease=0.0, min_samples_leaf=1, 
