@@ -28,7 +28,7 @@ def train_model(X, y):
     # Fit the data on model
     model.fit(X, y)
     # Get the model score
-    score = model.score(X, y)
+    score = model.accuracy(X, y)
 
     # Return the values
     return model, score
